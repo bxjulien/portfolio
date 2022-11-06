@@ -1,0 +1,39 @@
+.badge {
+  padding: 5px;
+  width: auto;
+  height: fit-content;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.primary {
+  background-color: $primary_bg;
+  color: $primary;
+}
+
+.secondary {
+  background-color: $secondary_bg;
+  color: $secondary;
+}
+
+.ternary {
+  background-color: $ternary_bg;
+  color: $ternary;
+}
+
+.warning {
+  background-color: $warning_bg;
+  color: $warning;
+}
+
+.error {
+  background-color: $error_bg;
+  color: $error;
+}
+
+.default {
+  background-color: $default_bg;
+  color: $default;
+}

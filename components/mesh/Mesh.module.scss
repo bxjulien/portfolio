@@ -1,0 +1,11 @@
+.mesh {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: radial-gradient(circle at 50% -10%, $secondary_bg, transparent 30%),
+    radial-gradient(circle at 50% -10%, $primary_bg, transparent 56%);
+}

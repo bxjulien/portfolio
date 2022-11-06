@@ -1,0 +1,51 @@
+#studies {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .study {
+    position: relative;
+
+    min-width: 200px;
+    
+    height: 175px;
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+
+    .img {
+      display: flex;
+      align-items: center;
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      grid-row-start: 3;
+      z-index: 1;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: large;
+    }
+  }
+
+  @media screen and (min-width: 585px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: inherit;
+    gap: 2rem;
+
+    .study:first-child {
+      grid-column: 1 / 3;
+      grid-row: 1 / 1;
+    }
+  }
+    
+  
+}

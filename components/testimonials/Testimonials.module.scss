@@ -1,0 +1,44 @@
+#testimonials {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+  
+  .testimonial {
+    figure,
+    blockquote {
+      margin: 0;
+    }
+
+    code {
+      font-size: xx-large;
+    }
+
+    figcaption {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: auto auto;
+      align-items: center;
+
+      font-weight: bold;
+      letter-spacing: 2px;
+
+      .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: .5rem;
+        position: relative;
+
+        grid-row: 1 / 3;
+      }
+
+      cite {
+              letter-spacing: normal;
+        font-style: normal;
+        font-weight: normal;
+        grid-column-start: 2;
+        font-size: small;
+      }
+    }
+  }
+}
