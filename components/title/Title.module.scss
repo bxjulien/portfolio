@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 
   margin: 0 0 4rem 0;
 
@@ -25,11 +25,11 @@
       &::after {
         transform: scale(2);
 
-        opacity: 0.02;
+        opacity: 0.03;
         content: attr(data-title);
         position: absolute;
         top: 0rem;
-        left: 0rem;        
+        left: 0rem;
       }
     }
   }

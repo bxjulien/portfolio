@@ -5,7 +5,26 @@
   display: grid;
   justify-content: center;
 
+  position: relative;
+
+  background-image: url('/test.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+  header {
+    width: 100%;
+    height: $navbar_height;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
   main {
-    max-width: 1440px;
+    padding-top: calc($navbar_height + 4rem);
+    max-width: 1024px;
   }
 }

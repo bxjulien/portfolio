@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 html,
@@ -8,6 +8,7 @@ body {
   /* font-family: "Nuosu SIL", serif; */
   font-family: 'Noto Sans JP', sans-serif;
   color: $text;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,6 +26,6 @@ a {
   }
   body {
     color: $text;
-    background: #151718;
+    background: $bg;
   }
 }

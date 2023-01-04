@@ -1,0 +1,14 @@
+.lsd_border {
+  width: auto;
+  background: 
+  linear-gradient($bg, $bg), 
+  linear-gradient(var(--gradient-rotation, 120deg), $primary, $secondary, $bg, $bg,  $bg, $bg,  $bg, $bg, $secondary, $primary);
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+}
+
+

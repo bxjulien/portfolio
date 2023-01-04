@@ -8,12 +8,12 @@
     position: relative;
 
     min-width: 200px;
-    
+
     height: 175px;
 
     display: grid;
     grid-template-rows: auto auto auto;
-    gap: 1rem;
+    gap: 0.8rem;
 
     .img {
       display: flex;
@@ -22,6 +22,7 @@
 
     .badges {
       display: flex;
+      align-items: center;
       gap: 10px;
       grid-row-start: 3;
       z-index: 1;
@@ -46,6 +47,4 @@
       grid-row: 1 / 1;
     }
   }
-    
-  
 }
