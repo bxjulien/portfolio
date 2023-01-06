@@ -1,4 +1,5 @@
 $bg: #f9f9f9;
+$bg_opacity: #f9f9f98f;
 $bg_darker: #0f1113;
 
 $text: #000000;
@@ -32,6 +33,7 @@ $navbar_height: 20vh;
 
 @media (prefers-color-scheme: dark) {
   $bg: #151718;
+  $bg_opacity: #1517188f;
   $bg_darker: #0f1113;
 
   $text: #ffffff;

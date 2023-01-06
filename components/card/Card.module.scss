@@ -10,10 +10,14 @@
   overflow: hidden;
 
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-}
 
-.bordered {
-  border: 1px solid $card_border;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+
+  &:hover {
+    border: 1px solid $primary;
+  }
 }
 
 .no_padding {

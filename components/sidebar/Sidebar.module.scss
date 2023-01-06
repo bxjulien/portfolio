@@ -8,17 +8,21 @@
     padding: 0;
     width: 100%;
     display: flex;
-    gap: 0.5rem;
     justify-content: space-evenly;
 
     list-style-type: none;
 
     li {
+      cursor: pointer;
       font-weight: 600;
-    }
-  }
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
 
-  @media screen and (max-width: 425px) {
-    display: none;
+      transition: background 0.2s ease-in-out;
+
+      &:hover {
+        background: $bg_opacity;
+      }
+    }
   }
 }
