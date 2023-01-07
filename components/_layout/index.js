@@ -16,15 +16,18 @@ export default function Layout({ children }) {
               <Link
                 href='https://www.linkedin.com/in/julien-berthoumieux/'
                 target={'_blank'}
+                id={styles.linkedin}
               >
-                <ImLinkedin color='grey' size={25} />
+                <ImLinkedin size={25} color='#0077B0' />
               </Link>
             </div>
 
             <p>Développeur Web</p>
           </div>
 
-          <img src={'/pp.jpg'} alt='Benoit Blanc' />
+          <div id={styles.pp}>
+            <img src={'/pp.jpg'} alt='Benoit Blanc' />
+          </div>
         </div>
       </header>
 

@@ -1,4 +1,8 @@
 .badge {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.5rem 0.7rem;
   border-radius: 999px;
   color: $text_light;

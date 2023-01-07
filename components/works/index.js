@@ -1,7 +1,11 @@
 import Badge from '../badge';
 import Card from '../card';
+import { FaNodeJs } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import Link from 'next/link';
 import { RxExternalLink } from 'react-icons/rx';
+import { TbBrandFirebase } from 'react-icons/tb';
+import { TbBrandNextjs } from 'react-icons/tb';
 import styles from './Works.module.scss';
 
 export default function Works({}) {
@@ -23,15 +27,30 @@ export default function Works({}) {
 
               <div className={styles.footer}>
                 <div className={styles.badges}>
-                  <Badge variant='default'>Next.JS</Badge>
-                  <Badge variant='default'>React</Badge>
-                  <Badge variant='default'>Node.JS</Badge>
-                  <Badge variant='default'>GCP</Badge>
+                  <Badge variant='default'>
+                    <TbBrandNextjs size={25} />
+                    Next.JS
+                  </Badge>
+
+                  <Badge variant='default'>
+                    <FaReact size={25} color='#61DAFB' />
+                    React
+                  </Badge>
+
+                  <Badge variant='default'>
+                    <FaNodeJs size={25} color='#509941' />
+                    Node.JS
+                  </Badge>
+
+                  <Badge variant='default'>
+                    <TbBrandFirebase size={25} color='#FFCB2B' />
+                    Firebase
+                  </Badge>
                 </div>
 
                 <RxExternalLink
                   className={styles.icon}
-                  size='24'
+                  size='25'
                   color='grey'
                 />
               </div>

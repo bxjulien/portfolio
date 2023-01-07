@@ -32,7 +32,7 @@ export default function Home() {
 
       <Separator letter='u' />
 
-      <Title tag='h3' subtitle={studiesSubtitle} id='studies_title'>
+      <Title tag='h3' subtitle={studiesSubtitle} id='studies'>
         études
       </Title>
 
@@ -48,7 +48,7 @@ export default function Home() {
 
       <Separator letter='i' />
 
-      <Title tag='h3' subtitle={contactSubtitle} id='contact_title'>
+      <Title tag='h3' subtitle={contactSubtitle} id='contact'>
         Contact
       </Title>
 
