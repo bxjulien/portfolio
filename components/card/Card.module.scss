@@ -1,6 +1,5 @@
 .card {
   background: $card_bg;
-  border-radius: 10px;
   min-width: 270px;
   min-height: 100px;
 
@@ -9,14 +8,17 @@
   padding: 1rem;
   overflow: hidden;
 
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-
-  border: 1px solid transparent;
+  border: 1px solid $card_border;
   transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 15px;
 
   &:hover {
-    border: 1px solid $primary;
+    background-color: $card_bg_hover;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
   }
 }
 

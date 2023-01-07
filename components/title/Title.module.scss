@@ -21,6 +21,7 @@
 
       font-size: clamp(2.5rem, 6vw, 5rem);
       letter-spacing: 0.08rem;
+      color: $text;
 
       &::after {
         transform: scale(2);
@@ -37,6 +38,6 @@
   .title_subtitle {
     text-align: center;
     font-size: clamp(1rem, 3vw, 1.5rem);
-    opacity: 0.8;
+    color: $text_light;
   }
 }

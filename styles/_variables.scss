@@ -1,9 +1,8 @@
-$bg: #f9f9f9;
-$bg_opacity: #f9f9f98f;
-$bg_darker: #0f1113;
+$bg: #000000;
+$bg_opacity: #1517188f;
 
-$text: #000000;
-$text_light: rgb(15, 15, 15);
+$text: #ffffff;
+$text_light: #a6aebd;
 
 $primary: #9e8cfc;
 $primary_bg: #251e40;
@@ -11,8 +10,8 @@ $primary_bg: #251e40;
 $secondary: #00c2d7;
 $secondary_bg: #07303b;
 
-$ternary: rgb(50, 238, 46);
-$ternary_bg: rgb(1, 63, 0);
+$ternary: rgb(32, 187, 30);
+$ternary_bg: rgb(6, 65, 5);
 
 $warning: rgb(255, 166, 0);
 $warning_bg: rgb(76, 50, 2);
@@ -20,24 +19,24 @@ $warning_bg: rgb(76, 50, 2);
 $error: rgb(244, 54, 54);
 $error_bg: rgb(83, 1, 1);
 
-$default: #ebebeb;
-$default_bg: #6f6f6f;
+$default: #bbbbbb;
+$default_bg: #363636;
 
-$card_bg: #fefefe;
-$card_border: rgb(223, 223, 223);
+$card_bg: #1c1d1f;
+$card_bg_hover: #202224;
+$card_border: rgb(50, 52, 57);
 
 $epitech: #025b9c;
 $wcs: #883436;
 
 $navbar_height: 20vh;
 
-@media (prefers-color-scheme: dark) {
-  $bg: #151718;
-  $bg_opacity: #1517188f;
-  $bg_darker: #0f1113;
+@media (prefers-color-scheme: light) {
+  $bg: #f9f9f9;
+  $bg_opacity: #f9f9f98f;
 
-  $text: #ffffff;
-  $text_light: #ffffff;
+  $text: #000000;
+  $text_light: rgb(15, 15, 15);
 
   $primary: #9e8cfc;
   $primary_bg: #251e40;
@@ -54,11 +53,11 @@ $navbar_height: 20vh;
   $error: rgb(244, 54, 54);
   $error_bg: rgb(83, 1, 1);
 
-  $default: #bbbbbb;
-  $default_bg: #363636;
+  $default: #ebebeb;
+  $default_bg: #6f6f6f;
 
-  $card_bg: #0e0e0b;
-  $card_border: #212121;
+  $card_bg: #fefefe;
+  $card_border: rgb(223, 223, 223);
 
   $epitech: #025b9c;
   $wcs: #883436;

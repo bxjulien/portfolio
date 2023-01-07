@@ -4,11 +4,7 @@
   flex-wrap: wrap;
   gap: 2rem;
 
-  a {
-    flex-grow: 1;
-  }
-
-  &:nth-child(1) {
+  .master {
     width: 100%;
   }
 
@@ -25,6 +21,7 @@
     .img {
       display: flex;
       align-items: center;
+      width: min-content;
     }
 
     .badges {

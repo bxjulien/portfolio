@@ -1,10 +1,10 @@
+import Badge from '../badge';
 import Card from '../card';
 import Link from 'next/link';
-import styles from './Works.module.scss';
 import { RxExternalLink } from 'react-icons/rx';
-import Badge from '../badge';
+import styles from './Works.module.scss';
 
-export default function Works({ }) {
+export default function Works({}) {
   return (
     <div id={styles.works}>
       <div className={styles.work}>
@@ -16,7 +16,9 @@ export default function Works({ }) {
               <h3>Obie.ch</h3>
 
               <p>
-                Obie est une application web destinée aux travailleurs ou frontaliers suisses facilitant la récupération de leurs avoirs LPP.
+                Obie est une application web destinée aux travailleurs ou
+                frontaliers suisses facilitant la récupération de leurs avoirs
+                LPP.
               </p>
 
               <div className={styles.footer}>
@@ -27,12 +29,13 @@ export default function Works({ }) {
                   <Badge variant='default'>GCP</Badge>
                 </div>
 
-
-                <RxExternalLink className={styles.icon} size='24' color='grey' />
+                <RxExternalLink
+                  className={styles.icon}
+                  size='24'
+                  color='grey'
+                />
               </div>
             </div>
-
-
           </Card>
         </Link>
       </div>
