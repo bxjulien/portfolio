@@ -18,7 +18,7 @@ export default function Layout({ children }) {
                 target={'_blank'}
                 id={styles.linkedin}
               >
-                <ImLinkedin size={25} color='#0077B0' />
+                <ImLinkedin size={25} color='grey' />
               </Link>
             </div>
 

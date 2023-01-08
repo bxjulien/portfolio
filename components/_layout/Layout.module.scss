@@ -14,10 +14,11 @@
     text-align: center;
 
     .header_content {
-      padding: 5rem 0 0rem 0;
+      margin: 5rem 0 0rem 0;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
+
       .texts {
         text-align: left;
         .title {
@@ -27,13 +28,24 @@
 
           h1 {
             font-size: xxx-large;
+            width: max-content;
+            background: -webkit-linear-gradient(
+              left top,
+              $primary 0%,
+              $primary 50%,
+              $secondary 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
           }
 
           #linkedin {
             transition: all 0.2s ease-in-out;
 
             &:hover {
-              transform: skew(-7deg) scale(0.97);
+              transform: skew(-5deg);
             }
           }
         }
@@ -47,7 +59,7 @@
         height: 160px;
         border-radius: 100%;
 
-        background-color: $card_bg;
+        border: 2px solid $primary;
 
         img {
           width: 150px;
