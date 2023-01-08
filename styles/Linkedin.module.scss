@@ -1,0 +1,55 @@
+#linkedin {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+
+  p {
+    text-align: center;
+  }
+
+  .banner {
+    box-shadow: inset 35rem -2rem 4rem 2rem #1c1d1f;
+    background: transparent center/cover url('/grid.svg') no-repeat;
+    background-position: right;
+    background-size: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    gap: 0.5rem;
+
+    .titles {
+      display: grid;
+      place-items: center;
+      h1 {
+        width: min-content;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        width: max-content;
+        background: -webkit-linear-gradient(
+          left top,
+          $secondary 0%,
+          $primary 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      h1,
+      h3 {
+        letter-spacing: 2px;
+      }
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}

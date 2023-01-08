@@ -1,7 +1,4 @@
-import Card from '@/components/card';
 import Layout from '@/components/_layout';
-import LsdBorder from '@/components/lsd_border';
-import Mesh from '@/components/mesh';
 import Separator from '@/components/separator';
 import Studies from '@/components/studies/Studies';
 import Testimonials from '@/components/testimonials';
