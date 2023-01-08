@@ -12,7 +12,13 @@ export default function Layout({ children }) {
         <div className={styles.header_content}>
           <div className={styles.texts}>
             <div className={styles.title}>
-              <h1>Julien BX</h1>
+              <h1>
+                Julien <br /> Berthoumieux
+              </h1>
+            </div>
+
+            <p>
+              Développeur Web
               <Link
                 href='https://www.linkedin.com/in/julien-berthoumieux/'
                 target={'_blank'}
@@ -20,9 +26,7 @@ export default function Layout({ children }) {
               >
                 <ImLinkedin size={25} color='grey' />
               </Link>
-            </div>
-
-            <p>Développeur Web</p>
+            </p>
           </div>
 
           <div id={styles.pp}>
