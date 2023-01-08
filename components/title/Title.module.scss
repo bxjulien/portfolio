@@ -26,7 +26,7 @@
       &::after {
         transform: scale(2);
 
-        opacity: 0.03;
+        opacity: 0.1;
         content: attr(data-title);
         position: absolute;
         top: 0rem;
