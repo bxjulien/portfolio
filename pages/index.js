@@ -1,5 +1,4 @@
 import Card from '@/components/card';
-import Fade from 'react-reveal/Fade';
 import Layout from '@/components/_layout';
 import LsdBorder from '@/components/lsd_border';
 import Mesh from '@/components/mesh';
