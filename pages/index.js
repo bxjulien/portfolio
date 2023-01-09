@@ -1,3 +1,4 @@
+import Contact from '@/components/contact/Contact';
 import Layout from '@/components/_layout';
 import Separator from '@/components/separator';
 import Studies from '@/components/studies/Studies';
@@ -44,11 +45,13 @@ export default function Home() {
 
       <Separator letter='i' />
 
-      <Title tag='h3' subtitle={contactSubtitle} id='contact'>
+      {/*       <Title tag='h3' subtitle={contactSubtitle} id='contact'>
         Contact
       </Title>
 
-      <Separator letter='e' />
+      <Contact />
+
+      <Separator letter='e' /> */}
     </Layout>
   );
 }
