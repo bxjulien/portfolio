@@ -45,13 +45,13 @@ export default function Home() {
 
       <Separator letter='i' />
 
-      {/*       <Title tag='h3' subtitle={contactSubtitle} id='contact'>
+      <Title tag='h3' subtitle={contactSubtitle} id='contact'>
         Contact
       </Title>
 
       <Contact />
 
-      <Separator letter='e' /> */}
+      <Separator letter='e' />
     </Layout>
   );
 }
