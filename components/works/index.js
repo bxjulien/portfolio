@@ -11,7 +11,7 @@ export default function Works({ }) {
     <div id={styles.works}>
       <div className={styles.work}>
         <Card variant='no_padding'>
-          <img src={'obie.png'} alt='work 1' />
+          <img src={'obie2.png'} alt='obie.ch' />
 
           <div className={styles.work_content}>
             <div className={styles.title}>

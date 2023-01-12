@@ -22,6 +22,8 @@
 
       transition: all 0.2s ease-in-out;
 
+      color: $text;
+
       &::placeholder {
         color: $text_light;
       }
