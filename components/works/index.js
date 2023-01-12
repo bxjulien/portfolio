@@ -2,13 +2,11 @@ import Badge from '../badge';
 import Card from '../card';
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
-import Link from 'next/link';
-import { RxExternalLink } from 'react-icons/rx';
 import { TbBrandFirebase } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
 import styles from './Works.module.scss';
 
-export default function Works({}) {
+export default function Works({ }) {
   return (
     <div id={styles.works}>
       <div className={styles.work}>
@@ -22,17 +20,21 @@ export default function Works({}) {
             </div>
 
             <div className={styles.description}>
-              Obie est une application web destinée aux travailleurs ou
-              frontaliers suisses facilitant la récupération de leurs avoirs
-              LPP.
-              <br />
-              Je tiens le rôle de lead concepteur développeur et travaille en
-              collaboration avec mon client qui est maitre des règles métiers.
-              <br />
-              <br />
-              Les fonctionnalités principales sont :
-              <br />
-              <br />
+              <p>
+
+                Obie est une application web destinée aux travailleurs ou
+                frontaliers suisses facilitant la récupération de leurs avoirs
+                LPP.
+                <br />
+                <br />
+                Je tiens le rôle de lead concepteur développeur et travaille en
+                collaboration avec mon client qui est maitre des règles métiers.
+                <br />
+                <br />
+                Les fonctionnalités principales sont :
+                <br />
+                <br />
+              </p>
               <ul>
                 <li>
                   <strong>Landing page publique</strong> présentant le produit
@@ -45,16 +47,14 @@ export default function Works({}) {
                   une gestion totale des données
                 </li>
                 <li>
-                  <strong>Emailing</strong> sur mesure via{' '}
-                  <code>Nodemailer</code>
+                  <strong>Emailing</strong> sur mesure
                 </li>
                 <li>
                   <strong>Génération de PDF</strong> sur mesure via{' '}
                   <code>Puppeteer</code>
                 </li>
                 <li>
-                  <strong>Gestion intégrale multi-langues</strong> via{' '}
-                  <code>i18n</code>
+                  <strong>Gestion intégrale multi-langues</strong>
                 </li>
               </ul>
             </div>

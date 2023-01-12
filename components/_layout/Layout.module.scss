@@ -1,141 +1,14 @@
 #layout {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   overflow: hidden;
 
   display: grid;
   justify-content: center;
 
-  header {
-    width: 100%;
-
+  main {
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-
-    .header_content {
-      margin: 5rem 0 0rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .texts {
-        text-align: left;
-        .title {
-          display: flex;
-          align-items: flex-end;
-          gap: 1rem;
-
-          h1 {
-            height: max-content;
-            line-height: 3.5rem;
-
-            font-size: 3.6rem;
-
-            width: max-content;
-            background: -webkit-linear-gradient(
-              left top,
-              $primary 0%,
-              $primary 50%,
-              $secondary 100%
-            );
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-          }
-        }
-
-        p {
-          display: flex;
-          align-items: baseline;
-          gap: 1rem;
-          padding: 1rem 0 0 0;
-          font-size: 1.6rem;
-          color: $text_light;
-
-          #linkedin {
-            transition: all 0.2s ease-in-out;
-
-            &:hover {
-              transform: skew(-5deg);
-            }
-          }
-        }
-      }
-
-      #pp {
-        display: grid;
-        place-items: center;
-
-        width: 160px;
-        height: 160px;
-        border-radius: 100%;
-
-        border: 2px solid $primary;
-
-        img {
-          width: 150px;
-          height: 150px;
-          object-fit: cover;
-          border-radius: 100%;
-        }
-      }
-    }
-
-    @media screen and (max-width: 645px) {
-      .header_content {
-        flex-direction: column;
-        gap: 2rem;
-
-        .texts {
-          text-align: center;
-
-          p {
-            justify-content: center;
-          }
-        }
-
-        #pp {
-          width: 140px;
-          height: 140px;
-
-          img {
-            width: 130px;
-            height: 130px;
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: 645px) {
-      .header_content {
-        flex-direction: column;
-        gap: 2rem;
-
-        .texts {
-          text-align: center;
-
-          .title {
-            h1 {
-              font-size: 2.8rem;
-            }
-          }
-
-          p {
-            font-size: 1.4rem;
-          }
-        }
-      }
-    }
-  }
-
-  main {
-    padding-top: calc($navbar-height);
-    max-width: 50rem;
+    gap: 5rem;
   }
 }
-
-/* 
-
- */

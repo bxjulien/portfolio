@@ -2,8 +2,6 @@ import styles from '../../styles/Ui.module.scss';
 
 import Badge from "@/components/badge";
 import Card from '@/components/card';
-import Mesh from '@/components/mesh';
-import Studies from '@/components/studies/Studies';
 
 export default function Ui() {
   return (

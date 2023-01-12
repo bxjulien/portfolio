@@ -1,8 +1,8 @@
-import styles from './Sidebar.module.scss';
+import styles from './Navbar.module.scss';
 
-export default function Sidebar() {
+export default function Navbar() {
   return (
-    <nav id={styles.sidebar}>
+    <nav id={styles.navbar}>
       <ul>
         <li>
           <a href='#works_title'>Travaux</a>

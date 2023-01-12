@@ -16,7 +16,7 @@ export default function Contact() {
     const name = data.get('name');
 
     fetch(
-      'https://public.herotofu.com/v1/7c39c920-9126-11ed-a003-6f0b76086b1c',
+      process.env.HEROTOFU_FORM_ENDPOINT,
       {
         method: 'POST',
         headers: {
@@ -38,12 +38,7 @@ export default function Contact() {
         {status.submitted || status.error ? (
           <Response status={status} />
         ) : (
-          <form
-            onSubmit={handleSubmit}
-            action='https://public.herotofu.com/v1/7c39c920-9126-11ed-a003-6f0b76086b1c'
-            method='POST'
-            target='_blank'
-          >
+          <form onSubmit={handleSubmit}>
             <input type='text' name='name' placeholder='Nom' required />
             <input type='email' name='email' placeholder='Email' required />
 

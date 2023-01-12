@@ -17,8 +17,6 @@ const contactSubtitle =
 export default function Home() {
   return (
     <Layout>
-      <About />
-
       <Separator letter='j' />
 
       <Title tag='h3' subtitle={projectsSubtitle} id='works_title'>
@@ -38,7 +36,7 @@ export default function Home() {
       <Separator letter='l' />
 
       <Title tag='h3' id='testimonials_title'>
-        Témoignages
+        témoignages
       </Title>
 
       <Testimonials />
@@ -46,7 +44,7 @@ export default function Home() {
       <Separator letter='i' />
 
       <Title tag='h3' subtitle={contactSubtitle} id='contact'>
-        Contact
+        contact
       </Title>
 
       <Contact />
