@@ -26,7 +26,12 @@
           font-size: 3.6rem;
 
           width: max-content;
-          background: -webkit-linear-gradient(left top, $primary 0%, $primary 50%, $secondary 100%);
+          background: -webkit-linear-gradient(
+            left top,
+            $primary 0%,
+            $primary 50%,
+            $secondary 100%
+          );
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -145,8 +150,10 @@
           }
         }
 
-        p {
-          font-size: 1.4rem;
+        .sub {
+          h2 {
+            font-size: 1.4rem;
+          }
         }
       }
     }
