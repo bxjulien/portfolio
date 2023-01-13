@@ -7,7 +7,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import styles from './Works.module.scss';
 import Image from 'next/image';
 
-export default function Works({ }) {
+export default function Works({ t }) {
   return (
     <section id={styles.works}>
       <div className={styles.work}>
@@ -27,42 +27,39 @@ export default function Works({ }) {
           <div className={styles.work_content}>
             <div className={styles.title}>
               <h3>Obie.ch</h3>
-              <small>Juin 2021 - Présent</small>
+              <small>{t('obie_dates')}</small>
             </div>
 
             <div className={styles.description}>
               <p>
-                Obie est une application web destinée aux travailleurs ou
-                frontaliers suisses facilitant la récupération de leurs avoirs
-                LPP.
+                {t('obie_description_1')}
                 <br />
                 <br />
-                Je tiens le rôle de lead concepteur développeur et travaille en
-                collaboration avec mon client qui est maitre des règles métiers.
+                {t('obie_description_2')}
                 <br />
                 <br />
-                Les fonctionnalités principales sont :
+                {t('obie_description_3')}
                 <br />
                 <br />
               </p>
               <ul>
                 <li>
-                  <strong>Landing page publique</strong> présentant le produit
+                  <strong>{t('obie_feature_1_0')}</strong> {t('obie_feature_1_1')}
                 </li>
                 <li>
-                  <strong>Formulaire avancé</strong> de recherche d'avoirs LPP
+                  <strong>{t('obie_feature_2_0')}</strong> {t('obie_feature_2_1')}
                 </li>
                 <li>
-                  <strong>Dashboard administrateur sécurisé</strong> proposant une gestion totale des données
+                  <strong>{t('obie_feature_3_0')}</strong> {t('obie_feature_3_1')}
                 </li>
                 <li>
-                  <strong>Emailing</strong> sur mesure
+                  <strong>{t('obie_feature_4_0')}</strong> {t('obie_feature_4_1')}
                 </li>
                 <li>
-                  <strong>Génération de PDF</strong> sur mesure
+                  <strong>{t('obie_feature_5_0')}</strong> {t('obie_feature_4_1')}
                 </li>
                 <li>
-                  <strong>Gestion intégrale multi-langues</strong>
+                  <strong>{t('obie_feature_6_0')}</strong>
                 </li>
               </ul>
             </div>

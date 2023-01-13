@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Studies.module.scss';
 
-export default function Studies() {
+export default function Studies({ t }) {
   return (
     <section id={styles.studies}>
       <Card className={`${styles.study} ${styles.master}`} variant='bordered'>
@@ -22,7 +22,7 @@ export default function Studies() {
         <div className={styles.badges}>
           <Badge variant='primary'>Master</Badge>
           <Badge variant='default'>2023</Badge>
-          <Badge variant='default'>Alternance</Badge>
+          <Badge variant='default'>{t('apprenticeship')}</Badge>
         </div>
 
         <span className={styles.title}>
@@ -45,7 +45,7 @@ export default function Studies() {
         <div className={styles.badges}>
           <Badge variant='primary'>Licence</Badge>
           <Badge variant='default'>2021</Badge>
-          <Badge variant='default'>Alternance</Badge>
+          <Badge variant='default'>{t('apprenticeship')}</Badge>
         </div>
 
         <span className={styles.title}>

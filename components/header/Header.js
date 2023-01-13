@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import styles from './Header.module.scss';
 
-export default function Header() {
+export default function Header({ t }) {
   return (
     <header id={styles.header}>
       <div className={styles.header_content}>
@@ -17,7 +17,7 @@ export default function Header() {
 
           <div className={styles.sub}>
             <h2>
-              Développeur Web
+              {t('web_dev')}
             </h2>
 
             <div className={styles.socials}>

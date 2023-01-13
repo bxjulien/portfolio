@@ -1,6 +1,7 @@
 const path = require('path');
+const nextTranslate = require('next-translate');
 
-const nextConfig = {
+module.exports = nextTranslate({
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, '/styles')],
@@ -9,6 +10,4 @@ const nextConfig = {
   env: {
     HEROTOFU_FORM_ENDPOINT: process.env.HEROTOFU_FORM_ENDPOINT,
   }
-}
-
-module.exports = nextConfig
+});

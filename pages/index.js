@@ -6,48 +6,44 @@ import Testimonials from '@/components/testimonials';
 import Title from '@/components/title';
 import Works from '@/components/works';
 import styles from '../styles/Home.module.scss';
-
-const studiesSubtitle =
-  "Mon parcours de reconversion professionnelle entrepris en 2019 à l'âge de 25 ans.";
-const projectsSubtitle =
-  'Les solutions dont je suis fier, réalisées dans le cadre de commande client ou de projet personnel.';
-const contactSubtitle =
-  'Un projet en tête ? Une question ? Je me ferais un plaisir de vous répondre !';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
+  const { t } = useTranslation('common');
+
   return (
     <Layout>
       <Separator letter='j' />
 
-      <Title tag='h3' subtitle={projectsSubtitle} id='works_title'>
-        travaux
+      <Title tag='h3' subtitle={t('projects_subtitle')} id='works'>
+        {t('works')}
       </Title>
 
-      <Works />
+      <Works t={t} />
 
       <Separator letter='u' />
 
-      <Title tag='h3' subtitle={studiesSubtitle} id='studies'>
-        études
+      <Title tag='h3' subtitle={t('studies_subtitle')} id='studies'>
+        {t('studies')}
       </Title>
 
-      <Studies />
+      <Studies t={t} />
 
       <Separator letter='l' />
 
-      <Title tag='h3' id='testimonials_title'>
-        témoignages
+      <Title tag='h3' id='testimonials'>
+        {t('testimonials')}
       </Title>
 
-      <Testimonials />
+      <Testimonials t={t} />
 
       <Separator letter='i' />
 
-      <Title tag='h3' subtitle={contactSubtitle} id='contact'>
-        contact
+      <Title tag='h3' subtitle={t('contact_subtitle')} id='contact'>
+        {t('contact')}
       </Title>
 
-      <Contact />
+      <Contact t={t} />
 
       <Separator letter='e' />
     </Layout>
