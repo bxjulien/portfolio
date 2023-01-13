@@ -1,13 +1,19 @@
 
 import { useRouter } from "next/router";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const LocaleContext = createContext();
 
 export default function LocaleContextProvider({ children }) {
   const router = useRouter();
 
-  const [locale, setLocale] = useState('')
+  const [locale, setLocale] = useState('FR');
+
+  useEffect(() => {
+    if (navigator && navigator.language.split('-')[1] !== locale) {
+      setLocale(navigator.language.split('-')[1]);
+    }
+  }, [])
 
   const handleChangeLocale = (value) => {
     setLocale(value.toUpperCase());
@@ -29,4 +35,3 @@ export default function LocaleContextProvider({ children }) {
 export const useLocaleContext = () => {
   return useContext(LocaleContext);
 };
-
