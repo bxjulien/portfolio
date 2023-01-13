@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import styles from './Header.module.scss';
@@ -40,7 +41,13 @@ export default function Header() {
         </div>
 
         <div id={styles.pp}>
-          <img src={'/pp.jpg'} alt='profile picture' />
+          <Image
+            src={'/pp.jpg'}
+            alt='profile picture'
+            width={200}
+            height={200}
+            quality={100}
+          />
         </div>
       </div>
 

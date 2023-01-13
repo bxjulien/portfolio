@@ -5,13 +5,24 @@ import { FaReact } from 'react-icons/fa';
 import { TbBrandFirebase } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
 import styles from './Works.module.scss';
+import Image from 'next/image';
 
 export default function Works({ }) {
   return (
     <div id={styles.works}>
       <div className={styles.work}>
         <Card variant='no_padding'>
-          <img src={'obie2.png'} alt='obie.ch' />
+          <div className={styles.image}>
+            <div className={styles.overlay}>
+              <small>Release 2023</small>
+            </div>
+            <Image src={'/obie2.png'}
+              alt='obie.ch'
+              width={800}
+              height={500}
+              quality={100}
+            />
+          </div>
 
           <div className={styles.work_content}>
             <div className={styles.title}>
@@ -21,7 +32,6 @@ export default function Works({ }) {
 
             <div className={styles.description}>
               <p>
-
                 Obie est une application web destinée aux travailleurs ou
                 frontaliers suisses facilitant la récupération de leurs avoirs
                 LPP.
@@ -43,15 +53,13 @@ export default function Works({ }) {
                   <strong>Formulaire avancé</strong> de recherche d'avoirs LPP
                 </li>
                 <li>
-                  <strong>Dashboard administrateur sécurisé</strong> proposant
-                  une gestion totale des données
+                  <strong>Dashboard administrateur sécurisé</strong> proposant une gestion totale des données
                 </li>
                 <li>
                   <strong>Emailing</strong> sur mesure
                 </li>
                 <li>
-                  <strong>Génération de PDF</strong> sur mesure via{' '}
-                  <code>Puppeteer</code>
+                  <strong>Génération de PDF</strong> sur mesure
                 </li>
                 <li>
                   <strong>Gestion intégrale multi-langues</strong>
