@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export default function Works({ }) {
   return (
-    <div id={styles.works}>
+    <section id={styles.works}>
       <div className={styles.work}>
         <Card variant='no_padding'>
           <div className={styles.image}>
@@ -96,6 +96,6 @@ export default function Works({ }) {
           </div>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }

@@ -33,7 +33,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.contact}>
+    <section className={styles.contact}>
       <LsdBorder>
         {status.submitted || status.error ? (
           <Response status={status} />
@@ -50,7 +50,7 @@ export default function Contact() {
           </form>
         )}
       </LsdBorder>
-    </div>
+    </section>
   );
 }
 
