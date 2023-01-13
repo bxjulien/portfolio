@@ -43,7 +43,7 @@ export default function Studies() {
         </div>
 
         <div className={styles.badges}>
-          <Badge variant='secondary'>Licence</Badge>
+          <Badge variant='primary'>Licence</Badge>
           <Badge variant='default'>2021</Badge>
           <Badge variant='default'>Alternance</Badge>
         </div>
@@ -66,7 +66,7 @@ export default function Studies() {
         </div>
 
         <div className={styles.badges}>
-          <Badge variant='ternary'>Bac +2</Badge>
+          <Badge variant='primary'>Bac +2</Badge>
           <Badge variant='default'>2020</Badge>
         </div>
 

@@ -6,7 +6,7 @@ export default function Title({
   id,
   children,
   variant,
-  tag,
+  tag = 'h1',
   subtitle,
 }) {
   const [ref, isVisible] = useVisible();

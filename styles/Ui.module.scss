@@ -2,17 +2,15 @@
   display: grid;
   grid-template-columns: auto;
   gap: 2rem;
-  padding: .5rem;
-  
+  padding: 0.5rem;
+
   section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    place-items: center;
     gap: 1rem;
   }
 
-  .mesh {
-    position: relative;
-    width: 100%;
-    height: 50vh;
+  .cards {
+    flex-direction: column;
   }
 }

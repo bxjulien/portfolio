@@ -2,10 +2,17 @@ import styles from '../../styles/Ui.module.scss';
 
 import Badge from "@/components/badge";
 import Card from '@/components/card';
+import LsdBorder from '@/components/lsd_border';
+import Title from '@/components/title';
 
 export default function Ui() {
   return (
     <div id={styles.ui}>
+
+      <section>
+        <Title subtitle={"subtitle"}>Title</Title>
+      </section>
+
       <section className={styles.badges}>
         <Badge variant="primary">primary</Badge>
         <Badge variant="secondary">secondary</Badge>
@@ -17,7 +24,7 @@ export default function Ui() {
 
       <section className={styles.cards}>
         <Card>classic</Card>
-        <Card variant="bordered">bordered</Card>
+        <LsdBorder>lsd border</LsdBorder>
       </section>
 
     </div>

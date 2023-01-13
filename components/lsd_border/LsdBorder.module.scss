@@ -1,4 +1,10 @@
 .lsd_border {
+  min-width: 270px;
+  min-height: 100px;
+
+  display: grid;
+  place-items: center;
+
   background: linear-gradient($bg, $bg),
     linear-gradient(
       var(--gradient-rotation, 120deg),
