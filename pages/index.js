@@ -7,9 +7,11 @@ import Title from '@/components/title';
 import Works from '@/components/works';
 import styles from '../styles/Home.module.scss';
 import useTranslation from 'next-translate/useTranslation';
+import useToggleTheme from 'hooks/useToggleTheme';
 
 export default function Home() {
   const { t } = useTranslation('common');
+  const [theme, toggleTheme] = useToggleTheme();
 
   return (
     <Layout>
