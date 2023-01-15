@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  height: $navbar_height;
+  height: var(--navbar_height);
 
   ul {
     margin: 0;
@@ -21,7 +21,7 @@
       padding: 0.5rem 1rem;
       border-radius: 10px;
 
-      color: $text_light;
+      color: var(--text_light);
 
       transition: all 0.2s ease-in-out;
 
@@ -30,8 +30,8 @@
       animation: pop-in 0.5s ease-in-out forwards;
 
       &:hover {
-        background: $card_bg;
-        color: $text;
+        background: var(--card_bg);
+        color: var(--text);
       }
     }
 

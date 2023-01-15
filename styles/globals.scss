@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import "_variables.scss";
 
 html,
 body {
@@ -7,11 +8,10 @@ body {
   margin: 0;
   /* font-family: "Nuosu SIL", serif; */
   font-family: "Noto Sans JP", sans-serif;
-  color: $text;
   scroll-behavior: smooth;
 
-  color: $text;
-  background: $bg;
+  color: var(--text);
+  background: var(--bg);
 }
 
 a {

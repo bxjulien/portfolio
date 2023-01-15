@@ -5,37 +5,37 @@
   gap: 0.5rem;
   padding: 0.5rem 0.7rem;
   border-radius: 999px;
-  color: $text_light;
-  background: $card_bg_hover;
+  color: var(--text_light);
+  background: var(--card_bg_hover);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .primary {
-  background-color: $primary_bg;
-  color: $primary;
+  background-color: var(--primary_bg);
+  color: var(--primary);
 }
 
 .secondary {
-  background-color: $secondary_bg;
-  color: $secondary;
+  background-color: var(--secondary_bg);
+  color: var(--secondary);
 }
 
 .ternary {
-  background-color: $ternary_bg;
-  color: $ternary;
+  background-color: var(--ternary_bg);
+  color: var(--ternary);
 }
 
 .warning {
-  background-color: $warning_bg;
-  color: $warning;
+  background-color: var(--warning_bg);
+  color: var(--warning);
 }
 
 .error {
-  background-color: $error_bg;
-  color: $error;
+  background-color: var(--error_bg);
+  color: var(--error);
 }
 
 .default {
-  background: $card_bg_hover;
-  color: $text;
+  background: var(--card_bg_hover);
+  color: var(--text);
 }
