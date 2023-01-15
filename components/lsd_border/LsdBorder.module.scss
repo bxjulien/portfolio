@@ -5,21 +5,20 @@
   display: grid;
   place-items: center;
 
-  background: linear-gradient(
-    var(--bg),
-    var(--bg),
-    linear-gradient(var(--gradient-rotation), 120deg),
-    var(--primary),
-    var(--secondary),
-    var(--bg),
-    var(--bg),
-    var(--bg),
-    var(--bg),
-    var(--bg),
-    var(--bg),
-    var(--secondary),
-    var(--primary)
-  );
+  background: linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(
+      var(--gradient-rotation, 120deg),
+      var(--primary),
+      var(--secondary),
+      var(--bg),
+      var(--bg),
+      var(--bg),
+      var(--bg),
+      var(--bg),
+      var(--bg),
+      var(--secondary),
+      var(--primary)
+    );
 
   border: 1px solid transparent;
   border-radius: 15px;
