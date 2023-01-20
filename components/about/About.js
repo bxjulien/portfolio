@@ -23,17 +23,3 @@ export default function About() {
     </section>
   );
 }
-
-/* 
-I am a 28 year old passionate developer based in Toulouse.
-
-  J'aime designer, concevoir et développer des applications
-numériques afin de résoudre des problèmes de la vie courante.
-
-I have been working for 3 years at Ubigreen as a fullstack web developer alternation.
-Cette alternance me permet d'obtenir <code>diplôme d'ingénieur en informatique dans l'école Epitech.
-
-I also hold the role of designer developer on the Obie web application for almost 1 year,
-  a customer order that will be released soon.
-
-When I'm offline, I spend my time in nature training for my future trail competitions.  */
