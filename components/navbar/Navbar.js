@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import LocaleToggle from '../locale_toggle/LocaleToggle';
 import { Squeeze as Burger } from 'hamburger-react';
 import styles from './Navbar.module.scss';
+import { FiDownloadCloud } from 'react-icons/fi';
+import ThemeToggle from '../theme_toggle/ThemeToggle';
 
 const toggleStyles = (isNavbarOpen, width) => {
   const bodyOpenStyles = {
@@ -49,11 +51,26 @@ export default function Navbar({ }) {
   const navActions = [
     {
       id: 1,
+      component: <ThemeToggle />,
+      show: true,
+    },
+    {
+      id: 2,
+      component: (
+        <Link href="/CV - Berthoumieux Julien.pdf" name='cv test' target={'_blank'} download>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}>
+            <FiDownloadCloud size={22} /> CV
+          </div>
+        </Link>
+      ),
+      show: true,
+    },
+    {
+      id: 3,
       component: <LocaleToggle />,
       show: true,
     },
   ];
-
 
   useEffect(() => {
     setNavLinks(getNavLinks());

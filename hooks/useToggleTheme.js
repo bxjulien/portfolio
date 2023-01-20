@@ -16,7 +16,7 @@ export default function useToggleTheme() {
     localStorage.setItem("theme", newTheme);
   }
 
-  return [theme, toggleTheme];
+  return { theme, toggleTheme };
 }
 
 function setDocumentTheme(theme) {
