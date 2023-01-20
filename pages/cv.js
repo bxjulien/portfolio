@@ -32,7 +32,9 @@ export default function CV() {
 
               <div className={styles.info}>
                 <p>
-                  Jeune développeur passionné, je suis à la recherche d'une entreprise pour continuer à développer mes compétences et contribuer au succès de projets ambitieux. Mon entrain et mon esprit d'équipe font de moi un candidat idéal pour intégrer une équipe et l'aider à atteindre ses objectifs.
+                  Jeune développeur passionné, je suis à la recherche d'une entreprise pour continuer à développer mes compétences et contribuer au succès de projets ambitieux.
+                  <br />
+                  Mon entrain et mon esprit d'équipe font de moi un candidat idéal pour intégrer une équipe et l'aider à atteindre ses objectifs.
                 </p>
               </div>
 
@@ -149,12 +151,11 @@ export default function CV() {
                 contact@bxjulien.com
               </Link>
               <span>
-                28 ans
-              </span>
-              <span>
                 06 13 12 45 08
               </span>
-
+              <span>
+                28 ans
+              </span>
             </section>
 
             <section>
