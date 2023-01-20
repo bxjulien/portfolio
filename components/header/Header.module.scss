@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
 
+  transition: all 0.2s ease-in-out;
+
   .header_content {
     display: flex;
     justify-content: space-between;
@@ -33,11 +35,7 @@
     }
   }
 
-  /*   todo combiner les 2 media queries */
-
-  @media screen and (max-width: 645px) {
-    padding: 5rem 0 0 0;
-
+  @media screen and (max-width: 650px) {
     .header_content {
       flex-direction: column;
       gap: 2rem;
@@ -48,20 +46,9 @@
     }
   }
 
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 425px) {
     .header_content {
-      flex-direction: column;
-      gap: 2rem;
-
       .texts {
-        text-align: center;
-
-        .title {
-          h1 {
-            font-size: 2.8rem;
-          }
-        }
-
         .sub {
           h2 {
             font-size: 1.4rem;

@@ -10,12 +10,12 @@ export default function Testimonials({ t }) {
       job: `${t('professor')} @ Wild Code School`,
       avatar: '/geoffroy.png',
     },
-    {
-      cite: 'On est max ?',
-      name: 'Antoine Scié',
-      job: 'CTO @ Obie',
-      avatar: '/antoine.png',
-    },
+    /*     {
+          cite: 'On est max ?',
+          name: 'Antoine Scié',
+          job: 'CTO @ Obie',
+          avatar: '/antoine.png',
+        }, */
   ];
 
   return (
