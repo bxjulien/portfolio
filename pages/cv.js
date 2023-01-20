@@ -4,10 +4,10 @@ import styles from '../styles/CV.module.scss';
 import { FaUser } from 'react-icons/fa';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { IoSchool } from 'react-icons/io5';
-import { FaNodeJs } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandFirebase } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { SiCypress } from 'react-icons/si';
 import Badge from '@/components/badge';
 import Link from 'next/link';
 
@@ -53,10 +53,6 @@ export default function CV() {
                     <h4>Développeur Web Fullstack, Ubigreen, Alternance</h4>
                     <span>Mars 2020 - Présent</span>
                   </div>
-
-                  <Link href='https://www.ubigreen.com' target={'_blank'}>
-                    https://www.ubigreen.com
-                  </Link>
 
                   <p>
                     J'interviens sur les applications web et mobile de mon entreprise en travaillant en étroite collaboration avec l'ensemble des équipes.
@@ -121,7 +117,7 @@ export default function CV() {
                 <div className={styles.master}>
                   <div>
                     <h4>Epitech, Master</h4>
-                    <span>Septembre 2021 - Juillet 2023</span>
+                    <span className={styles.dates}>Septembre 2021 - Juillet 2023</span>
                   </div>
                   <p>Architecte Logiciel Développeur d'Applications</p>
                 </div>
@@ -129,7 +125,7 @@ export default function CV() {
                 <div>
                   <div>
                     <h4>Epitech, Licence</h4>
-                    <span>Septembre 2020 - Septembre 2021</span>
+                    <span className={styles.dates}>Septembre 2020 - Septembre 2021</span>
                   </div>
                   <p>Concepteur Développeur d'Application</p>
                 </div>
@@ -137,7 +133,7 @@ export default function CV() {
                 <div>
                   <div>
                     <h4>Wild Code School, Bac +2</h4>
-                    <span>Septembre 2019 - Juin 2020</span>
+                    <span className={styles.dates}>Septembre 2019 - Juin 2020</span>
                   </div>
                   <p>Développeur Web et Mobile</p>
                 </div>
@@ -149,13 +145,16 @@ export default function CV() {
           <div className={styles.details}>
             <section>
               <h3>Details</h3>
-              <p>
-                <Link href='mailto:julienberthoumieux.dev@gmail.com'>
-                  <small>julienberthoumieux.dev@gmail.com</small>
-                </Link>
-                <br />
+              <Link href='mailto:julienberthoumieux.dev@gmail.com'>
+                contact@bxjulien.com
+              </Link>
+              <span>
                 28 ans
-              </p>
+              </span>
+              <span>
+                06 13 12 45 08
+              </span>
+
             </section>
 
             <section>
@@ -177,16 +176,56 @@ export default function CV() {
               </Badge>
 
               <Badge variant='classic'>
-                <TbBrandFirebase size={25} color='#FFCB2B' />
+                <TbBrandFirebase size={24.5} color='#FFCB2B' />
                 Firebase
+              </Badge>
+
+              <Badge variant='classic'>
+                <SiCypress size={22} color='black' />
+                Cypress
+              </Badge>
+
+            </section>
+
+            <section>
+              <h3>Soft Skills</h3>
+
+              <Badge variant='classic'>
+                Esprit d'équipe
+              </Badge>
+
+              <Badge variant='classic'>
+                Bon relationnel
+              </Badge>
+
+              <Badge variant='classic'>
+                Proactif
+              </Badge>
+
+              <Badge variant='classic'>
+                Autonome
+              </Badge>
+
+              <Badge variant='classic'>
+                Créatif
+              </Badge>
+
+            </section>
+
+            <section>
+              <h3>Activités</h3>
+
+              <Badge variant='classic'>
+                Trail / Running
+              </Badge>
+
+              <Badge variant='classic'>
+                Cinéma
               </Badge>
 
             </section>
           </div>
         </div>
-
-
-
 
       </div>
     </div>

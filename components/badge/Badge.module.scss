@@ -43,5 +43,6 @@
 .classic {
   background: var(--text);
   color: var(--bg);
-  border-color: var(--default);
+  border-color: transparent;
+  padding: 0;
 }
