@@ -1,10 +1,8 @@
 #header {
   width: 100%;
-  height: calc(100vh - var(--navbar_height) - 150px);
 
   display: flex;
   flex-direction: column;
-  padding: 10rem 0 0 0;
 
   .header_content {
     display: flex;
@@ -13,31 +11,6 @@
 
     .texts {
       text-align: left;
-
-      .title {
-        display: flex;
-        align-items: flex-end;
-        gap: 1rem;
-
-        h1 {
-          height: max-content;
-          line-height: 3.5rem;
-
-          font-size: 3.6rem;
-
-          width: max-content;
-          background: -webkit-linear-gradient(left top, var(--primary) 0%, var(--primary) 50%, var(--secondary) 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: transparent;
-
-          opacity: 0;
-
-          transition: all 1s ease-in-out;
-          animation: fade-in-right 1s ease-in-out forwards;
-        }
-      }
 
       .sub {
         display: flex;
@@ -56,51 +29,11 @@
           animation: fade-in-right 1s ease-in-out forwards;
           animation-delay: 0.5s;
         }
-
-        .socials {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-
-          opacity: 0;
-
-          animation: pop-in 1.4s ease-in-out forwards;
-          animation-delay: 2.6s;
-
-          #linkedin {
-            transition: all 0.2s ease-in-out;
-          }
-
-          #github {
-            transition: all 0.2s ease-in-out;
-          }
-        }
-      }
-    }
-
-    #pp {
-      display: grid;
-      place-items: center;
-
-      width: 160px;
-      height: 160px;
-      border-radius: 100%;
-
-      border: 2px solid var(--primary);
-
-      opacity: 0;
-
-      animation: fade-in-top 1s ease-in-out forwards;
-      animation-delay: 1s;
-
-      img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 100%;
       }
     }
   }
+
+  /*   todo combiner les 2 media queries */
 
   @media screen and (max-width: 645px) {
     padding: 5rem 0 0 0;
@@ -111,22 +44,6 @@
 
       .texts {
         text-align: center;
-
-        .sub {
-          .socials {
-            justify-content: center;
-          }
-        }
-      }
-
-      #pp {
-        width: 140px;
-        height: 140px;
-
-        img {
-          width: 130px;
-          height: 130px;
-        }
       }
     }
   }
@@ -155,19 +72,6 @@
   }
 }
 
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-}
-
 @keyframes fade-in-right {
   from {
     opacity: 0;
@@ -178,16 +82,5 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-  }
-}
-
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
   }
 }

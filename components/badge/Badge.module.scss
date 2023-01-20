@@ -39,3 +39,9 @@
   background: var(--card_bg_hover);
   color: var(--text);
 }
+
+.classic {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--default);
+}

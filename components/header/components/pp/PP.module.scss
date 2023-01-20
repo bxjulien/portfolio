@@ -1,0 +1,45 @@
+#pp {
+  display: grid;
+  place-items: center;
+
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+
+  border: 2px solid var(--primary);
+
+  opacity: 0;
+
+  animation: fade-in-top 1s ease-in-out forwards;
+  animation-delay: 1s;
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  @media screen and (max-width: 645px) {
+    width: 140px;
+    height: 140px;
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
