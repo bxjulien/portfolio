@@ -26,5 +26,22 @@
   "name": "Nom",
   "send": "Envoyer",
   "contact_success": "Merci, je vous recontacte très vite !",
-  "contact_error": "Oupsi, une erreur est survenue. Je m'occupe de ça rapidement !"
+  "contact_error": "Oupsi, une erreur est survenue. Je m'occupe de ça rapidement !",
+  "bio_1": "Je suis un développeur passioné de ",
+  "bio_2": "28 ans",
+  "bio_3": " basé à Toulouse.",
+  "bio_4": "J'aime designer, concevoir et développer des applications numériques afin de résoudre des problèmes de la vie courante.",
+  "bio_5": "Je travaille depuis ",
+  "bio_6": "3 ans chez Ubigreen",
+  "bio_7": " en tant qu'alternant développeur web fullstack. ",
+  "bio_8": "Cette alternance me permet d'obtenir ",
+  "bio_9": "diplôme d'ingénieur en informatique",
+  "bio_10": " dans l'école ",
+  "bio_11": "Epitech",
+  "bio_12": "Je tiens aussi le rôle de ",
+  "bio_13": "concepteur développeur",
+  "bio_14": " sur l'application web ",
+  "bio_15": "Obie",
+  "bio_16": " depuis bientôt 1 an, une commande client qui verra le jour prochainement.",
+  "bio_17": "Quand je suis déconnecté, je passe mon temps dans la nature à m'entrainer pour mes futures comptétions de trail. "
 }
