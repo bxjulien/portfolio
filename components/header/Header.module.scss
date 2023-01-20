@@ -36,6 +36,8 @@
   }
 
   @media screen and (max-width: 650px) {
+    margin-top: -4rem;
+
     .header_content {
       flex-direction: column;
       gap: 2rem;

@@ -124,7 +124,7 @@ export default function Navbar({ }) {
             .filter((link) => link.show)
             .map((link) => {
               return (
-                <li key={link.id}>
+                <li key={link.id} onClick={() => setIsOpen(false)}>
                   <Link href={link.path} className={link.class}>
                     {link.name}
                   </Link>
