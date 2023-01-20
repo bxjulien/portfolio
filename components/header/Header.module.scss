@@ -1,10 +1,10 @@
 #header {
   width: 100%;
-  height: calc(100vh - $navbar_height - 150px);
 
   display: flex;
   flex-direction: column;
-  padding: 10rem 0 0 0;
+
+  transition: all 0.2s ease-in-out;
 
   .header_content {
     display: flex;
@@ -14,36 +14,6 @@
     .texts {
       text-align: left;
 
-      .title {
-        display: flex;
-        align-items: flex-end;
-        gap: 1rem;
-
-        h1 {
-          height: max-content;
-          line-height: 3.5rem;
-
-          font-size: 3.6rem;
-
-          width: max-content;
-          background: -webkit-linear-gradient(
-            left top,
-            $primary 0%,
-            $primary 50%,
-            $secondary 100%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: transparent;
-
-          opacity: 0;
-
-          transition: all 1s ease-in-out;
-          animation: fade-in-right 1s ease-in-out forwards;
-        }
-      }
-
       .sub {
         display: flex;
         flex-direction: column;
@@ -52,7 +22,7 @@
         h2 {
           padding: 1rem 0 0 0;
           font-size: 1.6rem;
-          color: $text_light;
+          color: var(--text_light);
 
           opacity: 0;
 
@@ -61,54 +31,12 @@
           animation: fade-in-right 1s ease-in-out forwards;
           animation-delay: 0.5s;
         }
-
-        .socials {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-
-          opacity: 0;
-
-          animation: pop-in 1.4s ease-in-out forwards;
-          animation-delay: 2.6s;
-
-          #linkedin {
-            transition: all 0.2s ease-in-out;
-          }
-
-          #github {
-            transition: all 0.2s ease-in-out;
-          }
-        }
-      }
-    }
-
-    #pp {
-      display: grid;
-      place-items: center;
-
-      width: 160px;
-      height: 160px;
-      border-radius: 100%;
-
-      border: 2px solid $primary;
-
-      opacity: 0;
-
-      animation: fade-in-top 1s ease-in-out forwards;
-      animation-delay: 1s;
-
-      img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 100%;
       }
     }
   }
 
-  @media screen and (max-width: 645px) {
-    padding: 5rem 0 0 0;
+  @media screen and (max-width: 650px) {
+    margin-top: -4rem;
 
     .header_content {
       flex-direction: column;
@@ -116,40 +44,13 @@
 
       .texts {
         text-align: center;
-
-        .sub {
-          .socials {
-            justify-content: center;
-          }
-        }
-      }
-
-      #pp {
-        width: 140px;
-        height: 140px;
-
-        img {
-          width: 130px;
-          height: 130px;
-        }
       }
     }
   }
 
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 425px) {
     .header_content {
-      flex-direction: column;
-      gap: 2rem;
-
       .texts {
-        text-align: center;
-
-        .title {
-          h1 {
-            font-size: 2.8rem;
-          }
-        }
-
         .sub {
           h2 {
             font-size: 1.4rem;
@@ -157,19 +58,6 @@
         }
       }
     }
-  }
-}
-
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
   }
 }
 
@@ -183,16 +71,5 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-  }
-}
-
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
   }
 }

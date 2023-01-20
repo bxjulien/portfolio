@@ -1,54 +1,25 @@
-import Link from "next/link";
-import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import styles from './Header.module.scss';
+import Title from "./components/title/Title";
+import PP from "./components/pp/PP";
+import Socials from './components/socials/Socials';
 
-export default function Header({ t }) {
+export default function Header({ t, onCV = false }) {
   return (
     <header id={styles.header}>
       <div className={styles.header_content}>
         <div className={styles.texts}>
-          <div className={styles.title}>
-            <h1>
-              Julien <br /> Berthoumieux
-            </h1>
-          </div>
+          <Title onCV={onCV} />
 
           <div className={styles.sub}>
-            <h2>
+            <h2 style={{ padding: onCV ? 0 : null }}>
               {t('web_dev')}
             </h2>
 
-            <div className={styles.socials}>
-              <Link
-                href='https://www.linkedin.com/in/julien-berthoumieux'
-                target={'_blank'}
-                id={styles.linkedin}
-              >
-                <FaLinkedin size={20} color='grey' />
-              </Link>
-
-              <Link
-                href='https://github.com/bxjulien'
-                target={'_blank'}
-                id={styles.github}
-              >
-                <FaGithub size={20} color='grey' />
-              </Link>
-            </div>
+            <Socials onCV={onCV} />
           </div>
         </div>
 
-        <div id={styles.pp}>
-          <Image
-            src={'/pp.jpg'}
-            alt='profile picture'
-            width={200}
-            height={200}
-            quality={100}
-          />
-        </div>
+        <PP />
       </div>
     </header>
   )

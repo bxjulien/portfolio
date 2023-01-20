@@ -22,14 +22,14 @@
         border-radius: 10px 10px 0 0;
 
         background: rgba(95, 95, 95, 0.459);
-        color: $text;
+        color: var(--text);
         opacity: 0;
 
         transition: all 0.3s ease-in-out;
 
         small {
           font-size: 1.2rem;
-          background-color: $primary;
+          background-color: var(--primary);
           padding: 0.5rem 1rem;
           border-radius: 15px;
         }
@@ -67,7 +67,7 @@
       }
 
       .description {
-        color: $text_light;
+        color: var(--text_light);
 
         ul {
           li {
@@ -95,8 +95,8 @@
       place-items: center;
       text-align: center;
       border-radius: 0 0 15px 15px;
-      background: $primary;
-      color: $text;
+      background: var(--primary);
+      color: var(--text);
     }
   }
 }

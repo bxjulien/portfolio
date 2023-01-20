@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 
   return (
     <div id={styles.layout}>
-      <Navbar t={t} />
+      <Navbar />
 
       <Header t={t} />
 

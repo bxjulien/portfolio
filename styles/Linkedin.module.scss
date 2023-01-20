@@ -9,7 +9,7 @@
 
   .banner {
     box-shadow: inset 35rem -2rem 4rem 2rem #1c1d1f;
-    background: transparent center/cover url('/grid.svg') no-repeat;
+    background: transparent center/cover url("/grid.svg") no-repeat;
     background-position: right;
     background-size: 50%;
     height: 100%;
@@ -29,11 +29,7 @@
 
       h3 {
         width: max-content;
-        background: -webkit-linear-gradient(
-          left top,
-          $secondary 0%,
-          $primary 100%
-        );
+        background: -webkit-linear-gradient(left top, var(--secondary) 0%, var(--primary) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

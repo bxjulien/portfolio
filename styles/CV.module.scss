@@ -1,0 +1,95 @@
+#cv {
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+
+  .page {
+    background: white;
+    color: var(--bg);
+    height: 297mm;
+    width: 210mm;
+    padding: 6mm 8mm;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .content {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 2rem;
+
+      .main {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        section {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .title {
+            display: flex;
+            align-items: center;
+
+            .icon {
+              min-width: 30px;
+            }
+          }
+
+          .info {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            span,
+            p,
+            ul,
+            a {
+              font-size: 0.81rem;
+            }
+
+            ul {
+              margin-left: 30px;
+            }
+          }
+        }
+
+        .educations {
+          .info {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem 2rem;
+
+            .master {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .details {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        span {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

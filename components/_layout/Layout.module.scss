@@ -4,11 +4,16 @@
 
   display: grid;
   justify-content: center;
+  gap: 6rem;
+
+  position: relative;
 
   main {
     max-width: 50rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+
+    transition: all 0.2s ease-in-out;
   }
 }

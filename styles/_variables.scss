@@ -1,64 +1,75 @@
-$bg: #000000;
-$bg_opacity: #1517188f;
+:root {
+  --bg: #000000;
+  --bg_opacity: #1517188f;
 
-$text: #ffffff;
-$text_light: #a6aebd;
+  --text: #ffffff;
+  --text_light: #a6aebd;
 
-$primary: #9e8cfc;
-$primary_bg: #251e40;
+  --primary: #9e8cfc;
+  --primary_bg: #251e40;
 
-$secondary: #00c2d7;
-$secondary_bg: #07303b;
+  --secondary: #00c2d7;
+  --secondary_bg: #07303b;
 
-$ternary: rgb(32, 187, 30);
-$ternary_bg: rgb(6, 65, 5);
+  --ternary: rgb(32, 187, 30);
+  --ternary_bg: rgb(6, 65, 5);
 
-$warning: rgb(255, 166, 0);
-$warning_bg: rgb(76, 50, 2);
+  --warning: rgb(255, 166, 0);
+  --warning_bg: rgb(76, 50, 2);
 
-$error: rgb(244, 54, 54);
-$error_bg: rgb(83, 1, 1);
+  --error: rgb(244, 54, 54);
+  --error_bg: rgb(83, 1, 1);
 
-$default: #bbbbbb;
-$default_bg: #363636;
+  --default: #bbbbbb;
+  --default_bg: #363636;
 
-$card_bg: #1c1d1f;
-$card_bg_hover: #202224;
-$card_border: rgb(50, 52, 57);
+  --card_bg: #1c1d1f;
+  --card_bg_hover: #202224;
+  --card_border: rgb(50, 52, 57);
 
-$epitech: #025b9c;
-$wcs: #883436;
+  --epitech: #025b9c;
+  --wcs: #883436;
 
-$navbar_height: 60px;
+  --color-toggle-light: rgb(219, 154, 41);
+  --color-toggle-dark: var(--primary);
 
-/* @media (prefers-color-scheme: light) {
-  $bg: #f9f9f9;
-  $bg_opacity: #f9f9f98f;
+  --navbar_height: 60px;
+}
 
-  $text: #000000;
-  $text_light: rgb(15, 15, 15);
+[data-theme="light"] {
+  --bg: #f9f9f9;
+  --bg_opacity: #f9f9f98f;
 
-  $primary: #9e8cfc;
-  $primary_bg: #251e40;
+  --text: #000000;
+  --text_light: rgb(15, 15, 15);
 
-  $secondary: #00c2d7;
-  $secondary_bg: #07303b;
+  --primary: #9e8cfc;
+  --primary_bg: #251e40;
 
-  $ternary: rgb(50, 238, 46);
-  $ternary_bg: rgb(1, 63, 0);
+  --secondary: #00c2d7;
+  --secondary_bg: #07303b;
 
-  $warning: rgb(255, 166, 0);
-  $warning_bg: rgb(76, 50, 2);
+  --ternary: rgb(50, 238, 46);
+  --ternary_bg: rgb(1, 63, 0);
 
-  $error: rgb(244, 54, 54);
-  $error_bg: rgb(83, 1, 1);
+  --warning: rgb(255, 166, 0);
+  --warning_bg: rgb(76, 50, 2);
 
-  $default: #ebebeb;
-  $default_bg: #6f6f6f;
+  --error: rgb(244, 54, 54);
+  --error_bg: rgb(83, 1, 1);
 
-  $card_bg: #fefefe;
-  $card_border: rgb(223, 223, 223);
+  --default: #ebebeb;
+  --default_bg: #6f6f6f;
 
-  $epitech: #025b9c;
-  $wcs: #883436;
-} */
+  --card_bg: #fefefe;
+  --card_bg_hover: #fbfbfb;
+  --card_border: rgb(223, 223, 223);
+
+  --epitech: #025b9c;
+  --wcs: #883436;
+
+  --color-toggle-light: rgb(219, 154, 41);
+  --color-toggle-dark: var(--primary);
+
+  --navbar_height: 60px;
+}

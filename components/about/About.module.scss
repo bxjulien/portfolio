@@ -1,0 +1,22 @@
+.about {
+  p {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    color: var(--text_light);
+
+    line-height: 30px;
+
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all 0.8s ease-in-out;
+
+    span {
+      font-weight: 600;
+      color: var(--primary);
+    }
+  }
+
+  .visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
