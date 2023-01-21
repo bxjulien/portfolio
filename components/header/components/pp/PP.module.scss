@@ -2,6 +2,8 @@
   display: grid;
   place-items: center;
 
+  padding: 1rem;
+
   width: 160px;
   height: 160px;
   border-radius: 5px;
@@ -18,13 +20,13 @@
     width: 200px;
     height: 200px;
 
-    img {
+    .pp {
       width: 190px;
       height: 190px;
     }
   }
 
-  img {
+  .pp {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -37,7 +39,7 @@
     width: 140px;
     height: 140px;
 
-    img {
+    .pp {
       width: 130px;
       height: 130px;
     }

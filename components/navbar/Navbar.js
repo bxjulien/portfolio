@@ -1,10 +1,9 @@
 import useWindowWidth from 'hooks/useWindowWidth';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import LocaleToggle from '../locale_toggle/LocaleToggle';
-import { Squeeze as Burger } from 'hamburger-react';
+import { Cross as Burger } from 'hamburger-react';
 import styles from './Navbar.module.scss';
 import { FiDownloadCloud } from 'react-icons/fi';
 import ThemeToggle from '../theme_toggle/ThemeToggle';
@@ -24,70 +23,38 @@ const toggleStyles = (isNavbarOpen, width) => {
 
   const bodyStyles = isNavbarOpen ? bodyOpenStyles : bodyClosedStyles;
 
-  if (width <= 650) {
+  if (width <= 750) {
     document.body.style.overflow = isNavbarOpen ? 'hidden' : 'auto';
     Object.assign(document.querySelector('header').style, bodyStyles);
     Object.assign(document.querySelector('main').style, bodyStyles);
     document.querySelector('nav ul').style.transform = isNavbarOpen
       ? 'translateX(2rem)'
       : 'translateX(calc(-100% - 2rem))';
+    document.querySelectorAll('nav ul div li').forEach((e) => e.style.display = isNavbarOpen ? 'flex' : 'none');
+
   } else {
     document.body.style.overflow = 'auto';
     Object.assign(document.querySelector('header').style, bodyClosedStyles);
     Object.assign(document.querySelector('main').style, bodyClosedStyles);
     document.querySelector('nav ul').style.transform = 'translateX(0)';
+    document.querySelectorAll('nav ul div li').forEach((e) => e.style.display = 'flex');
   }
 };
 
 export default function Navbar({ }) {
   const { t } = useTranslation('common');
 
-  const router = useRouter();
-
   const width = useWindowWidth();
   const [isOpen, setIsOpen] = useState(false);
-
   const [navLinks, setNavLinks] = useState([]);
-  const navActions = [
-    {
-      id: 1,
-      component: <ThemeToggle />,
-      show: true,
-    },
-    {
-      id: 2,
-      component: (
-        <Link href="/CV - Berthoumieux Julien.pdf" name='cv test' target={'_blank'} download>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}>
-            <FiDownloadCloud size={22} /> CV
-          </div>
-        </Link>
-      ),
-      show: true,
-    },
-    {
-      id: 3,
-      component: <LocaleToggle />,
-      show: true,
-    },
-  ];
+  const [navActions, setNavActions] = useState([]);
+
+  const mobileNavHead = <ThemeToggle />;
 
   useEffect(() => {
     setNavLinks(getNavLinks());
-  }, [t]);
-
-  /**
-   * Close navbar on route change
-   */
-  useEffect(() => {
-    router.events.on('routeChangeStart', () => {
-      setIsOpen(false);
-    });
-
-    return () => {
-      router.events.off('routeChangeStart');
-    };
-  }, []);
+    setNavActions(getNavActions());
+  }, [t, isOpen, width]);
 
   /**
    * Handle styles on navbar open/close, window resize
@@ -102,34 +69,63 @@ export default function Navbar({ }) {
         id: 1,
         name: t('works'),
         path: '#works',
-        show: true,
+        show: isOpen || width > 750,
       },
       {
         id: 2,
         name: t('studies'),
         path: '#studies',
-        show: true,
+        show: isOpen || width > 750,
       },
       {
         id: 3,
         name: t('testimonials'),
         path: '#testimonials',
-        show: true,
+        show: isOpen || width > 750,
       },
       {
         id: 4,
         name: t('contact'),
         path: '#contact',
-        show: true,
+        show: isOpen || width > 750,
       },
     ];
 
     return links;
   };
 
+  const getNavActions = () => {
+    const actions = [
+      {
+        id: 1,
+        component: <ThemeToggle />,
+        show: width > 750,
+      },
+      {
+        id: 2,
+        component: (
+          <Link href="/CV - Berthoumieux Julien.pdf" name='cv test' target={'_blank'} download>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}>
+              <FiDownloadCloud size={22} /> CV
+            </div>
+          </Link>
+        ),
+        show: isOpen || width > 750,
+      },
+      {
+        id: 3,
+        component: <LocaleToggle />,
+        show: isOpen || width > 750,
+      },
+    ]
+
+    return actions;
+  };
+
   return (
     <nav id={styles.navbar}>
       <div className={styles.mobile}>
+        <div className={styles.head}>{mobileNavHead}</div>
         <div className={styles.burger}>
           <Burger toggled={isOpen} toggle={setIsOpen} rounded />
         </div>

@@ -10,6 +10,7 @@ export default function PP() {
         width={200}
         height={200}
         quality={100}
+        className={styles.pp}
       />
     </div>
   )

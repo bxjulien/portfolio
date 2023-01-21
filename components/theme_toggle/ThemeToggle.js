@@ -7,14 +7,13 @@ export default function ThemeToggle() {
   return (
     <label
       className={styles.container}
-      title={true ? "Activate light mode" : "Activate dark mode"}
-      aria-label={true ? "Activate light mode" : "Activate dark mode"}
-
+      title={theme === 'dark' ? "Activate light mode" : "Activate dark mode"}
+      aria-label={theme === 'dark' ? "Activate light mode" : "Activate dark mode"}
     >
       <input
         type="checkbox"
-        defaultChecked={true}
-        onChange={toggleTheme}
+        defaultChecked={theme == 'dark' ? true : false}
+        onClick={toggleTheme}
       />
       <div />
     </label>
