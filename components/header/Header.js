@@ -19,7 +19,7 @@ export default function Header({ t, onCV = false }) {
           </div>
         </div>
 
-        <PP />
+        <PP onCV={onCV} />
       </div>
     </header>
   )

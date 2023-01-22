@@ -2,14 +2,21 @@ import Header from '@/components/header/Header';
 import useTranslation from 'next-translate/useTranslation';
 import styles from '../styles/CV.module.scss';
 import { FaUser } from 'react-icons/fa';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
+import { BsFillBriefcaseFill, BsPiggyBank, BsCalendarMinus } from 'react-icons/bs';
 import { IoSchool } from 'react-icons/io5';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { TbBrandFirebase } from 'react-icons/tb';
+import { HiPhone } from 'react-icons/hi';
+import { SiJavascript } from 'react-icons/si';
+import { TbBrandFirebase, TbBuilding } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { BiCameraMovie } from 'react-icons/bi';
+import { MdCake } from 'react-icons/md';
+import { RiTeamFill, RiFocusLine } from 'react-icons/ri';
+import { ImBubbles } from 'react-icons/im';
+import { MdAutoFixHigh } from 'react-icons/md';
+import { GiRunningNinja, GiRunningShoe } from 'react-icons/gi';
 import { SiCypress } from 'react-icons/si';
 import Badge from '@/components/badge/Badge';
-import Link from 'next/link';
 
 export default function CV() {
   const { t } = useTranslation('common');
@@ -53,7 +60,16 @@ export default function CV() {
                 <div className={styles.info}>
                   <div>
                     <h4>Développeur Web Fullstack, Ubigreen, Alternance</h4>
-                    <span>Mars 2020 - Présent</span>
+                    <span>
+                      <Badge variant="classic">
+                        <BsCalendarMinus />
+                        Mars 2020 - Présent
+                      </Badge>
+                      <Badge variant="classic">
+                        <TbBuilding />
+                        Proptech
+                      </Badge>
+                    </span>
                   </div>
 
                   <p>
@@ -78,7 +94,16 @@ export default function CV() {
                 <div className={styles.info}>
                   <div>
                     <h4>Ingénieur Logiciel Web, Obie, Indépendant</h4>
-                    <span>Juin 2022 - Présent</span>
+                    <span>
+                      <Badge variant="classic">
+                        <BsCalendarMinus />
+                        Juin 2022 - Présent
+                      </Badge>
+                      <Badge variant="classic">
+                        <BsPiggyBank />
+                        Finance
+                      </Badge>
+                    </span>
                   </div>
 
                   <p>
@@ -119,7 +144,7 @@ export default function CV() {
                 <div className={styles.master}>
                   <div>
                     <h4>Epitech, Master</h4>
-                    <span className={styles.dates}>Septembre 2021 - Juillet 2023</span>
+                    <span className={styles.dates}>2021 - 2023</span>
                   </div>
                   <p>Architecte Logiciel Développeur d'Applications</p>
                 </div>
@@ -127,7 +152,7 @@ export default function CV() {
                 <div>
                   <div>
                     <h4>Epitech, Licence</h4>
-                    <span className={styles.dates}>Septembre 2020 - Septembre 2021</span>
+                    <span className={styles.dates}>2020 - 2021</span>
                   </div>
                   <p>Concepteur Développeur d'Application</p>
                 </div>
@@ -135,7 +160,7 @@ export default function CV() {
                 <div>
                   <div>
                     <h4>Wild Code School, Bac +2</h4>
-                    <span className={styles.dates}>Septembre 2019 - Juin 2020</span>
+                    <span className={styles.dates}>2019 - 2020</span>
                   </div>
                   <p>Développeur Web et Mobile</p>
                 </div>
@@ -147,23 +172,24 @@ export default function CV() {
           <div className={styles.details}>
             <section>
               <h3>Details</h3>
-              <Link href='mailto:julienberthoumieux.dev@gmail.com'>
-                contact@bxjulien.com
-              </Link>
-              <span>
+
+              <Badge variant='classic'>
+                <HiPhone />
                 06 13 12 45 08
-              </span>
-              <span>
+              </Badge>
+
+              <Badge variant='classic'>
+                <MdCake />
                 28 ans
-              </span>
+              </Badge>
             </section>
 
             <section>
               <h3>Technologies</h3>
 
               <Badge variant='classic'>
-                <TbBrandNextjs size={25} />
-                Next.JS
+                <SiJavascript size={22} color="#FFCB2B" />
+                JavaScript
               </Badge>
 
               <Badge variant='classic'>
@@ -174,6 +200,11 @@ export default function CV() {
               <Badge variant='classic'>
                 <FaNodeJs size={25} color='#509941' />
                 Node.JS
+              </Badge>
+
+              <Badge variant='classic'>
+                <TbBrandNextjs size={25} />
+                Next.JS
               </Badge>
 
               <Badge variant='classic'>
@@ -192,22 +223,26 @@ export default function CV() {
               <h3>Soft Skills</h3>
 
               <Badge variant='classic'>
+                <RiTeamFill />
                 Esprit d'équipe
               </Badge>
 
               <Badge variant='classic'>
-                Bon relationnel
+                <ImBubbles /> Bon relationnel
               </Badge>
 
               <Badge variant='classic'>
+                <GiRunningNinja />
                 Proactif
               </Badge>
 
               <Badge variant='classic'>
+                <RiFocusLine />
                 Autonome
               </Badge>
 
               <Badge variant='classic'>
+                <MdAutoFixHigh />
                 Créatif
               </Badge>
 
@@ -217,10 +252,12 @@ export default function CV() {
               <h3>Activités</h3>
 
               <Badge variant='classic'>
+                <GiRunningShoe />
                 Trail / Running
               </Badge>
 
               <Badge variant='classic'>
+                <BiCameraMovie />
                 Cinéma
               </Badge>
 

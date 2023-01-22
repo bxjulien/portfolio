@@ -46,6 +46,11 @@
             flex-direction: column;
             gap: 0.4rem;
 
+            span {
+              display: flex;
+              gap: 0.5rem;
+            }
+
             span,
             p,
             ul,
