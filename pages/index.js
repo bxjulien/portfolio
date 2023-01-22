@@ -1,10 +1,10 @@
 import Contact from '@/components/contact/Contact';
-import Layout from '@/components/_layout';
-import Separator from '@/components/separator';
+import Layout from '@/components/_layout/Layout';
+import Separator from '@/components/separator/Separator';
 import Studies from '@/components/studies/Studies';
-import Testimonials from '@/components/testimonials';
-import Title from '@/components/title';
-import Works from '@/components/works';
+import Testimonials from '@/components/testimonials/Testimonials';
+import Title from '@/components/title/Title';
+import Works from '@/components/works/Works';
 import useTranslation from 'next-translate/useTranslation';
 import About from '@/components/about/About';
 
@@ -15,7 +15,7 @@ export default function Home() {
     <Layout>
       <About />
 
-      <Separator letter='j' />
+      <Separator letter='r' />
 
       <Title tag='h3' subtitle={t('projects_subtitle')} id='works'>
         {t('works')}
@@ -23,7 +23,7 @@ export default function Home() {
 
       <Works t={t} />
 
-      <Separator letter='u' />
+      <Separator letter='e' />
 
       <Title tag='h3' subtitle={t('studies_subtitle')} id='studies'>
         {t('studies')}
@@ -31,7 +31,7 @@ export default function Home() {
 
       <Studies t={t} />
 
-      <Separator letter='l' />
+      <Separator letter='a' />
 
       <Title tag='h3' id='testimonials'>
         {t('testimonials')}
@@ -39,7 +39,7 @@ export default function Home() {
 
       <Testimonials t={t} />
 
-      <Separator letter='i' />
+      <Separator letter='c' />
 
       <Title tag='h3' subtitle={t('contact_subtitle')} id='contact'>
         {t('contact')}
@@ -47,7 +47,7 @@ export default function Home() {
 
       <Contact t={t} />
 
-      <Separator letter='e' />
+      <Separator letter='t' />
     </Layout>
   );
 }

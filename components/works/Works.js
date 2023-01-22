@@ -1,5 +1,5 @@
-import Badge from '../badge';
-import Card from '../card';
+import Badge from '../badge/Badge';
+import Card from '../card/Card';
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { TbBrandFirebase } from 'react-icons/tb';

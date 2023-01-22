@@ -1,5 +1,5 @@
-import Badge from '../badge';
-import Card from '../card';
+import Badge from '../badge/Badge';
+import Card from '../card/Card';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Studies.module.scss';

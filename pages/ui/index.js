@@ -1,9 +1,9 @@
 import styles from '../../styles/Ui.module.scss';
 
-import Badge from "@/components/badge";
-import Card from '@/components/card';
-import LsdBorder from '@/components/lsd_border';
-import Title from '@/components/title';
+import Badge from "@/components/badge/Badge";
+import Card from '@/components/card/Card';
+import LsdBorder from '@/components/lsd_border/LsdBorder';
+import Title from '@/components/title/Title';
 
 export default function Ui() {
   return (

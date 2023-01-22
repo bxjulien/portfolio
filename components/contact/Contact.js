@@ -1,4 +1,4 @@
-import LsdBorder from '../lsd_border';
+import LsdBorder from '../lsd_border/LsdBorder';
 import styles from './Contact.module.scss';
 import { useState } from 'react';
 

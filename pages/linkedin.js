@@ -1,8 +1,8 @@
 import { FaAngular, FaSass } from 'react-icons/fa';
 import { FaCss3Alt, FaTelegramPlane } from 'react-icons/fa';
 
-import Badge from '@/components/badge';
-import Card from '@/components/card';
+import Badge from '@/components/badge/Badge';
+import Card from '@/components/card/Card';
 import { FaHtml5 } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';

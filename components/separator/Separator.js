@@ -2,36 +2,11 @@ import styles from "./Separator.module.scss";
 
 export default function Separator({ letter }) {
   switch (letter) {
-    case "j":
+    case "r":
       return (
         <div className={styles.separator}>
           <div className={styles.short}></div>
           <div className={styles.long}></div>
-          <div className={styles.long}></div>
-          <div className={styles.long}></div>
-        </div>
-      );
-    case "u":
-      return (
-        <div className={styles.separator}>
-          <div className={styles.short}></div>
-          <div className={styles.short}></div>
-          <div className={styles.long}></div>
-        </div>
-      );
-    case "l":
-      return (
-        <div className={styles.separator}>
-          <div className={styles.short}></div>
-          <div className={styles.long}></div>
-          <div className={styles.short}></div>
-          <div className={styles.short}></div>
-        </div>
-      );
-    case "i":
-      return (
-        <div className={styles.separator}>
-          <div className={styles.short}></div>
           <div className={styles.short}></div>
         </div>
       );
@@ -41,14 +16,23 @@ export default function Separator({ letter }) {
           <div className={styles.short}></div>
         </div>
       );
-    case "n":
+    case "a":
+      return (
+        <div className={styles.separator}>
+          <div className={styles.short}></div>
+          <div className={styles.long}></div>
+        </div>
+      );
+    case "c":
       return (
         <div className={styles.separator}>
           <div className={styles.long}></div>
           <div className={styles.short}></div>
+          <div className={styles.long}></div>
+          <div className={styles.short}></div>
         </div>
       );
-    default:
+    case "t":
       return (
         <div className={styles.separator}>
           <div className={styles.long}></div>

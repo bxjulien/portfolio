@@ -1,4 +1,4 @@
-import Card from '../card';
+import Card from '../card/Card';
 import Image from 'next/image';
 import styles from './Testimonials.module.scss';
 

@@ -8,7 +8,7 @@ import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandFirebase } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiCypress } from 'react-icons/si';
-import Badge from '@/components/badge';
+import Badge from '@/components/badge/Badge';
 import Link from 'next/link';
 
 export default function CV() {
