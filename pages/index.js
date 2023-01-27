@@ -17,16 +17,16 @@ export default function Home() {
 
       <Separator letter='r' />
 
-      <Title tag='h3' subtitle={t('projects_subtitle')} id='works'>
-        {t('works')}
+      <Title tag='h3' subtitle={t('projects_subtitle')} id='projects'>
+        {t('projects')}
       </Title>
 
       <Works t={t} />
 
       <Separator letter='e' />
 
-      <Title tag='h3' subtitle={t('studies_subtitle')} id='studies'>
-        {t('studies')}
+      <Title tag='h3' subtitle={t('studies_subtitle')} id='educations'>
+        {t('educations')}
       </Title>
 
       <Studies t={t} />

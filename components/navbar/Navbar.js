@@ -67,14 +67,14 @@ export default function Navbar({ }) {
     const links = [
       {
         id: 1,
-        name: t('works'),
-        path: '#works',
+        name: t('projects'),
+        path: '#projects',
         show: isOpen || width > 750,
       },
       {
         id: 2,
-        name: t('studies'),
-        path: '#studies',
+        name: t('educations'),
+        path: '#educations',
         show: isOpen || width > 750,
       },
       {
