@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import '_variables.scss';
 
 html,
 body {
   padding: 0;
   margin: 0;
   /* font-family: "Nuosu SIL", serif; */
-  font-family: "Noto Sans JP", sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Noto Sans JP', sans-serif;
 
   color: var(--text);
   background: var(--bg);
@@ -24,4 +23,5 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth !important;
 }
