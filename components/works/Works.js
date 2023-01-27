@@ -4,6 +4,7 @@ import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { TbBrandFirebase } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { SiCypress } from 'react-icons/si';
 import styles from './Works.module.scss';
 import Image from 'next/image';
 
@@ -67,7 +68,7 @@ export default function Works({ t }) {
             <div className={styles.footer}>
               <div className={styles.badges}>
                 <Badge variant='default'>
-                  <TbBrandNextjs size={25} />
+                  <TbBrandNextjs size={27} />
                   Next.JS
                 </Badge>
 
@@ -85,6 +86,13 @@ export default function Works({ t }) {
                   <TbBrandFirebase size={25} color='#FFCB2B' />
                   Firebase
                 </Badge>
+
+
+                <Badge variant='default'>
+                  <SiCypress size={22} />
+                  Cypress
+                </Badge>
+
               </div>
             </div>
           </div>
