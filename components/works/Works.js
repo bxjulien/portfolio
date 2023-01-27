@@ -87,7 +87,6 @@ export default function Works({ t }) {
                   Firebase
                 </Badge>
 
-
                 <Badge variant='default'>
                   <SiCypress size={22} />
                   Cypress
