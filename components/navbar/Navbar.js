@@ -104,7 +104,7 @@ export default function Navbar({ }) {
       {
         id: 2,
         component: (
-          <Link href="/CV - Berthoumieux Julien.pdf" name='cv test' target={'_blank'}>
+          <Link href="/BerthoumieuxJulien.pdf" name='cv test' target={'_blank'}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}>
               <FiDownloadCloud size={20} /> CV
             </div>
