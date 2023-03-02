@@ -61,6 +61,7 @@
       justify-content: center;
 
       .title {
+        font-family: "Fraunces", serif;
         display: flex;
         align-items: baseline;
         gap: 1rem;
@@ -72,6 +73,10 @@
         ul {
           li {
             padding: 0.2rem 0;
+
+            strong {
+              font-family: "Fraunces", serif;
+            }
           }
         }
       }
