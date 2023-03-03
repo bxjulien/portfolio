@@ -73,11 +73,16 @@
         ul {
           li {
             padding: 0.2rem 0;
-
-            strong {
-              font-family: 'Yeseva One', cursive;
-            }
           }
+        }
+
+        a {
+          color: var(--text_light);
+          text-decoration: underline;
+        }
+
+        strong {
+          color: var(--primary);
         }
       }
 
