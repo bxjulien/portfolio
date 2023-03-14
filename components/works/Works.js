@@ -185,7 +185,7 @@ export default function Works({ t }) {
           <div className={styles.alert}>
             <small>
               <a href='https://github.com/bxjulien/blabble' target='_blank'>
-                Lien vers le code source
+                {t('source_code')}
               </a>
             </small>
           </div>

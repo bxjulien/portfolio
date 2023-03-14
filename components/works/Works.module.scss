@@ -8,6 +8,8 @@
 
       cursor: pointer;
 
+      overflow: hidden;
+
       .overlay {
         display: grid;
         place-items: center;
@@ -15,7 +17,7 @@
         height: 100%;
 
         position: absolute;
-        top: 49.5%;
+        top: 49%;
         right: 50%;
         transform: translate(50%, -50%);
 
@@ -46,7 +48,12 @@
         height: 100%;
 
         border-radius: 10px 10px 0 0;
-        object-fit: cover;
+
+        transition: all 0.45s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.05);
       }
     }
 
