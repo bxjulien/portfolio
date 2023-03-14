@@ -1,12 +1,15 @@
-import useWindowWidth from 'hooks/useWindowWidth';
-import useTranslation from 'next-translate/useTranslation';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import LocaleToggle from '../locale_toggle/LocaleToggle';
+
 import { Cross as Burger } from 'hamburger-react';
-import styles from './Navbar.module.scss';
 import { FiDownloadCloud } from 'react-icons/fi';
+import Link from 'next/link';
+import LocaleToggle from '../locale_toggle/LocaleToggle';
 import ThemeToggle from '../theme_toggle/ThemeToggle';
+import styles from './Navbar.module.scss';
+import useTranslation from 'next-translate/useTranslation';
+import useWindowWidth from 'hooks/useWindowWidth';
+
+const BREAKPOINT = 750;
 
 const toggleStyles = (isNavbarOpen, width) => {
   const bodyOpenStyles = {
@@ -23,25 +26,28 @@ const toggleStyles = (isNavbarOpen, width) => {
 
   const bodyStyles = isNavbarOpen ? bodyOpenStyles : bodyClosedStyles;
 
-  if (width <= 750) {
+  if (width <= BREAKPOINT) {
     document.body.style.overflow = isNavbarOpen ? 'hidden' : 'auto';
     Object.assign(document.querySelector('header').style, bodyStyles);
     Object.assign(document.querySelector('main').style, bodyStyles);
     document.querySelector('nav ul').style.transform = isNavbarOpen
       ? 'translateX(2rem)'
       : 'translateX(calc(-100% - 2rem))';
-    document.querySelectorAll('nav ul div li').forEach((e) => e.style.display = isNavbarOpen ? 'flex' : 'none');
-
+    document
+      .querySelectorAll('nav ul div li')
+      .forEach((e) => (e.style.display = isNavbarOpen ? 'flex' : 'none'));
   } else {
     document.body.style.overflow = 'auto';
     Object.assign(document.querySelector('header').style, bodyClosedStyles);
     Object.assign(document.querySelector('main').style, bodyClosedStyles);
     document.querySelector('nav ul').style.transform = 'translateX(0)';
-    document.querySelectorAll('nav ul div li').forEach((e) => e.style.display = 'flex');
+    document
+      .querySelectorAll('nav ul div li')
+      .forEach((e) => (e.style.display = 'flex'));
   }
 };
 
-export default function Navbar({ }) {
+export default function Navbar({}) {
   const { t } = useTranslation('common');
 
   const width = useWindowWidth();
@@ -69,25 +75,25 @@ export default function Navbar({ }) {
         id: 1,
         name: t('projects'),
         path: '#projects',
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
       {
         id: 2,
         name: t('educations'),
         path: '#educations',
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
       {
         id: 3,
         name: t('testimonials'),
         path: '#testimonials',
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
       {
         id: 4,
         name: t('contact'),
         path: '#contact',
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
     ];
 
@@ -99,25 +105,27 @@ export default function Navbar({ }) {
       {
         id: 1,
         component: <ThemeToggle />,
-        show: width > 750,
+        show: width > BREAKPOINT,
       },
       {
         id: 2,
         component: (
-          <Link href="/BerthoumieuxJulien.pdf" name='cv test' target={'_blank'}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}>
+          <Link href='/BerthoumieuxJulien.pdf' name='resume' target={'_blank'}>
+            <div
+              style={{ display: 'flex', alignItems: 'center', gap: '.3rem' }}
+            >
               <FiDownloadCloud size={20} /> CV
             </div>
           </Link>
         ),
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
       {
         id: 3,
         component: <LocaleToggle />,
-        show: isOpen || width > 750,
+        show: isOpen || width > BREAKPOINT,
       },
-    ]
+    ];
 
     return actions;
   };
