@@ -10,12 +10,16 @@ export default function Testimonials({ t }) {
       job: `${t('professor')} @ Wild Code School`,
       avatar: '/geoffroy.png',
     },
-    /*     {
-          cite: 'On est max ?',
-          name: 'Antoine Scié',
-          job: 'CTO @ Obie',
-          avatar: '/antoine.png',
-        }, */
+    {
+      cite: `Julien est un grand professionnel qui sait se sublimer quand une mission lui est confiée. Dans le développement d'Obie, non seulement il a su nous aiguiller et mener à bien ses missions, mais il est même allé jusqu'à nous suggérer des pistes d'amélioration auxquelles nous n'avions pas pensé.
+          Il ne compte pas son temps et s'implique fortement dans les projets qu'il entreprend.
+          Côté personnel, c'est une personne très joyeuse, avenante et dotée d'un grand sens de l'humour. Qualités indispensables pour faire d'une relation client/développeur une réussite.
+          Pour un client, c'est un combo parfait qui fait que je ne peux que recommander cette belle personne !
+          Plein de succès à toi Julien ! 👋`,
+      name: 'Antoine Scié',
+      job: 'CTO @ Obie',
+      avatar: '/antoine.png',
+    },
   ];
 
   return (
