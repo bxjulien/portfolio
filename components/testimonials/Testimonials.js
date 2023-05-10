@@ -20,6 +20,16 @@ export default function Testimonials({ t }) {
       job: 'CTO @ Obie',
       avatar: '/antoine.png',
     },
+    {
+      cite: `J’ai eu la chance de travailler avec Julien à Ubigreen ainsi que pour le compte de Obie. 
+      Julien est un développeur méticuleux et consciencieux qui est dévoué à son travail et qui s'assure toujours que tout est fait avec la plus grande qualité.
+      Julien a démontré une grande capacité à comprendre les besoins des clients et à créer des solutions personnalisées pour répondre à leurs besoins, il cherche toujours à se mettre à la place de l’utilisateur pour proposer les meilleures solutions possibles. 
+      Étant vraiment passionné de web, Julien fait une veille technologique constante ce qui le maintient à jour sur les dernières technologies et tendances dans ce domaine.
+      Très sociable Julien n’aura aucun mal à s’intégrer dans votre équipe.`,
+      name: 'Pierre Cicuto',
+      job: 'UX/UI designer @ PeopleVox',
+      avatar: '/pierre.png',
+    },
   ];
 
   return (
