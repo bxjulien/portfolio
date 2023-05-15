@@ -1,19 +1,20 @@
+import { FaNodeJs, FaReact } from 'react-icons/fa';
 import {
   SiCypress,
   SiGraphql,
+  SiLerna,
+  SiNestjs,
   SiPrisma,
+  SiSupabase,
   SiTypescript,
   SiVite,
 } from 'react-icons/si';
+import { TbBrandFirebase, TbBrandNextjs } from 'react-icons/tb';
 
 import Badge from '../badge/Badge';
 import Card from '../card/Card';
-import { FaNodeJs } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TbBrandFirebase } from 'react-icons/tb';
-import { TbBrandNextjs } from 'react-icons/tb';
 import styles from './Works.module.scss';
 
 export default function Works({ t }) {
@@ -185,6 +186,65 @@ export default function Works({ t }) {
           <div className={styles.alert}>
             <small>
               <a href='https://github.com/bxjulien/blabble' target='_blank'>
+                {t('source_code')}
+              </a>
+            </small>
+          </div>
+        </Card>
+      </div>
+
+      <div className={styles.work}>
+        <Card variant='no_padding'>
+          <div className={styles.work_content}>
+            <div className={styles.title}>
+              <h3>RaceQuest</h3>
+            </div>
+
+            <div className={styles.description}>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('racequest_description'),
+                }}
+              ></p>
+            </div>
+
+            <div className={styles.footer}>
+              <div className={styles.badges}>
+                <Badge variant='default'>
+                  <SiTypescript size={22} color='#2F74C0' />
+                  TypeScript
+                </Badge>
+
+                <Badge variant='default'>
+                  <FaReact size={25} color='#61DAFB' />
+                  React Native
+                </Badge>
+
+                <Badge variant='default'>
+                  <SiNestjs size={25} color='#E0234E' />
+                  NestJS
+                </Badge>
+
+                <Badge variant='default'>
+                  <FaNodeJs size={25} color='#509941' />
+                  Node.JS
+                </Badge>
+
+                <Badge variant='default'>
+                  <SiSupabase size={25} color='#40BF86' />
+                  Supabase
+                </Badge>
+
+                <Badge variant='default'>
+                  <SiLerna size={25} color='#B671FC' />
+                  Lerna
+                </Badge>
+              </div>
+            </div>
+          </div>
+          <div className={styles.alert}>
+            <small>
+              <a href='https://github.com/bxjulien/racequest' target='_blank'>
                 {t('source_code')}
               </a>
             </small>
